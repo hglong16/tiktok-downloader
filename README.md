@@ -16,7 +16,8 @@ A downloader base on [@demon071's project](https://github.com/demon071/Tiktok-AP
 
 1. Open a terminal or command prompt in the project directory.
 2. Run the downloader by using the following command: `python download.py`.
-3. Follow the prompts to download the files to your local computer.
+3. Follow the prompts and **SOVLE CAPCHA** to download the files to your local computer.
+
 
 
 
