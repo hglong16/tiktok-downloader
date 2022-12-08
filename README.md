@@ -1,6 +1,6 @@
 # Project Name
 
-A downloader for [@demon071's project](https://github.com/demon071/Tiktok-API-Python), without watermark.
+A downloader base on [@demon071's project](https://github.com/demon071/Tiktok-API-Python), without watermark.
 
 ## Getting Started
 ### Video Example
