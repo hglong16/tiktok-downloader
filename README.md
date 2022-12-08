@@ -6,6 +6,10 @@ A downloader base on [@demon071's project](https://github.com/demon071/Tiktok-AP
 ### Video Example
 
 
+https://user-images.githubusercontent.com/83296144/206349944-eee617f6-b560-442b-be9a-bb703f0a934f.mov
+
+
+
 ### Installation
 
 1. Clone or download this repository to your local computer.
