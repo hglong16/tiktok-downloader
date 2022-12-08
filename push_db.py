@@ -8,6 +8,9 @@ def push_db(single_video):
         cur = con.cursor()
         author = single_video['author'] if isinstance(
             single_video['author'], str) else single_video['author']['uniqueId']
+        music_author = "noAuthor"
+        if 'authorName' in single_video['music'].keys():
+            music_author = single_video['music']['authorName']
 
         cur.execute("""
                                   INSERT or ignore INTO tiktok VALUES (?,?,?,?,?,?,?,?,?,?,?)
@@ -21,7 +24,7 @@ def push_db(single_video):
             single_video['video']['ratio'],
             single_video['music']['id'],
             single_video['music']['title'],
-            single_video['music']['authorName'],
+            music_author,
             author
 
         ))

@@ -34,3 +34,5 @@ with con:
                 "hoanglont"
                 )
                 """)
+
+con.commit()

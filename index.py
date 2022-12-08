@@ -12,7 +12,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 Api = Tiktok()
 
 # edit username  here
-username = 'Đồ tiện ích'
+username = '_tieutieu_'
 if not os.path.exists(f"./download/{username}"):
     os.makedirs(f"./download/{username}")
 path = f"./download/{username}"
@@ -77,7 +77,7 @@ while True:
     if flag == 1:
         break
     first = False
-print(count, 'all_video')
+print(f"@{username} has {count} videos.")
 
 Api.closeBrowser()
 
@@ -92,10 +92,13 @@ async def download_all():
         else:
             print(path, '/', video_id, "existed")
     coros = [one(video_id, url_video) for video_id, url_video in all]
-    step = 15
-    for i in range(len(coros)):
+    step = 5
+    for i in range(len(coros)//step + 1):
         await asyncio.gather(*coros[i*step: step*(i + 1)])
+        percent = i*50//(len(coros)//step)
+        print(f"Download {i*100/(len(coros)//step):.2f}% of {count} videos in @{username}\n[{'='*percent}{'-'*(50-percent)}]")
 
+    print(f"Download 100%\n[{'='*50}]")
     print('ALLMUST DONE')
 
 
