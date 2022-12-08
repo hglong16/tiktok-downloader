@@ -12,7 +12,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 Api = Tiktok()
 
 # edit username  here
-username = 'phukien.hd'
+username = 'Đồ tiện ích'
 if not os.path.exists(f"./download/{username}"):
     os.makedirs(f"./download/{username}")
 path = f"./download/{username}"
